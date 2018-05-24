@@ -42,5 +42,7 @@
     "nu-html-checker": "^0.1.0",
     "onchange": "^3.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "flickity-hash": "^1.0.3"
+  }
 }
