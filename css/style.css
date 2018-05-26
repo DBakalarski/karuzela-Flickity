@@ -1,56 +1,18 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-body {
-  margin: 0;
-  padding: 0;
-}
+body { margin: 0; padding: 0; }
 
-.carousel-cell {
-  width: 100%;
-  /* full width */
-  height: 50vh;
-  /* height of carousel */
-  min-height: 250px;
-  margin-right: 10px;
-  background-size: cover;
-}
+.carousel-cell { width: 100%; /* full width */ height: 50vh; /* height of carousel */ min-height: 250px; margin-right: 10px; background-size: cover; }
 
-.container {
-  max-width: 1200px;
-  text-align: center;
-  margin: auto;
-}
+.container { max-width: 1200px; text-align: center; margin: auto; }
 
 /* Napis */
-.main-carousel {
-  display: block;
-  text-align: center;
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
+.main-carousel { display: block; text-align: center; line-height: 200px; font-size: 80px; color: white; }
 
 /* Button reset */
-button {
-  position: absolute;
-  height: 25px;
-  top: calc(50vh - 25px);
-  border-radius: 5%;
-  border: none;
-}
+button { position: absolute; height: 25px; top: calc(50vh - 25px); border-radius: 5%; border: none; }
 
-button a {
-  text-decoration: none;
-  color: black;
-}
+button a { text-decoration: none; color: black; }
 
 /* Progress bar */
-.progress-bar {
-  height: 20px;
-  width: 0;
-  background: #333;
-}
-
-/*# sourceMappingURL=style.css.map */
+.progress-bar { height: 20px; width: 0; background: #333; }
