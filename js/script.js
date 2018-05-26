@@ -1,3 +1,11 @@
+
+/************* MUSTACHE pętla *****************/
+for(var i = 0; i < carouselData.length; i++){
+		console.log(carouselData);
+		listItems += Mustache.render(templateItem, carouselData[i]);
+	}
+
+/************ CAROUSEL **********/
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
@@ -8,10 +16,8 @@ var flkty = new Flickity( elem, {
 
 });
 
-// element argument can be a selector string
-//   for an individual element
+
 var flkty = new Flickity( '.main-carousel', {
-  // options
   
 });
 
@@ -21,3 +27,17 @@ flkty.on( 'scroll', function( progress ) {
   progress = Math.max( 0, Math.min( 1, progress ) );
   progressBar.style.width = progress * 100 + '%';
 });
+
+/********* MUSTACHE **********/
+
+var templateItem = document.getElementById('template-product-item').innerHTML;
+
+Mustache.parse(templateItem);
+
+var listItems = '';
+
+var fullProductList = Mustache.render(templateList);
+
+results.insertAdjacentHTML('beforeend', fullProductList);
+
+////////////////////
