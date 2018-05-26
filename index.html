@@ -18,7 +18,7 @@
 
 
 	<script id="template-product-item" type="x-tmpl-mustache">
-		<div class="carousel-cell" style="background-image: url({{ image }}) "><div class="container"><h1>{{ title }}</h1></div>
+		<div class="carousel-cell" id="{{number}}" style="background-image: url({{ image }}) "><div class="container"><h1>{{ title }}</h1></div>
 		</div>
 		
 	</script>
@@ -28,26 +28,31 @@
 			{
 				image: 'img/delpicolo.jpg', 
 				title: 'Lorem Ipsum 1',
+				number: 'carousel-cell1',
 				description: '<p>Lorem ipsum.</p> <img src="img/delpicolo.jpg">'
 			},
 			{
 				image: 'img/dumlao.jpg', 
 				title: 'Lorem Ipsum 2',
+				number: 'carousel-cell2',
 				description: '<p>Lorem ipsum 2.</p> <img src="img/dumlao.jpg">'
 			},
 			{
 				image: 'img/limraco.jpg', 
 				title: 'Lorem Ipsum 3',
+				number: 'carousel-cell3',
 				description: '<p>Lorem ipsum.</p> <img src="img/Limraco.jpg">'
 			},
 			{
 				image: 'img/munro.jpg', 
 				title: 'Lorem Ipsum 4',
+				number: 'carousel-cell4',
 				description: '<p>Lorem ipsum.</p> <img src="img/munro.jpg">'
 			},
 			{
 				image: 'img/tree.jpg', 
 				title: 'Lorem Ipsum 5',
+				number: 'carousel-cell5',
 				description: '<p>Lorem ipsum.</p> <img src="img/delpicolo.jpg">'
 			}
 		];
