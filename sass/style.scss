@@ -6,7 +6,7 @@ body {
 
 .carousel-cell {
 	width: 100%; /* full width */
-	height: 50vh; /* height of carousel */
+	height: calc(50vh - 10px); /* height of carousel */
 	min-height: 250px;
 	margin-right: 10px;
 	background-size: cover;
@@ -30,7 +30,7 @@ body {
 button {
 	position: absolute;
 	height: 25px;
-	top: calc(50vh - 25px);
+	top: calc(50vh - 35px);
 	border-radius: 5%;
 	border: none;
 }
@@ -45,6 +45,14 @@ button a {
 	height: 20px;
 	width: 0;
 	background: #333;
+}
+
+/* Mapa */
+
+#map {
+	width: 100%;
+    height: calc(50vh - 10px);
+    background-color: grey;
 }
 
 

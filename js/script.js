@@ -7,6 +7,7 @@ var templateItem = document.getElementById('template-product-item').innerHTML;
 for(var i = 0; i < carouselData.length; i++){
 		console.log(carouselData);
 		listItems += Mustache.render(templateItem, carouselData[i]);
+
 	};
 
 //var fullList = Mustache.render(listItems);
@@ -32,3 +33,30 @@ flkty.on( 'scroll', function( progress ) {
   progress = Math.max( 0, Math.min( 1, progress ) );
   progressBar.style.width = progress * 100 + '%';
 });
+
+/***************** MAPA **********************/
+window.initMap = function() {
+  
+ 
+  for(var i = 0; i < carouselData.length; i++)
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: carouselData[i].coords});
+
+ var markerOne = new google.maps.Marker({
+      position: carouselData[i].coords,
+      map: map
+    });
+
+/*for(var i = 0; i < carouselData.length; i++){
+    var markerOne = new google.maps.Marker({
+      position: carouselData[i].coords,
+      map: map
+
+
+    //listItems += Mustache.render(templateItem, carouselData[i]);
+    
+  };*/
+
+
+}
+
