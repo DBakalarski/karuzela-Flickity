@@ -38,12 +38,11 @@ flkty.on( 'scroll', function( progress ) {
 window.initMap = function() {
   
  
-  for(var i = 0; i < carouselData.length; i++)
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: carouselData[i].coords});
+      document.getElementById('map'), {zoom: 4, center: carouselData[1].coords});
 
  var markerOne = new google.maps.Marker({
-      position: carouselData[i].coords,
+      position: carouselData[1].coords,
       map: map
     });
 
