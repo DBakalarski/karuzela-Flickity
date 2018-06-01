@@ -5,9 +5,9 @@ var templateItem = document.getElementById('template-product-item').innerHTML;
 //Mustache.parse(templateItem);
 
 for(var i = 0; i < carouselData.length; i++){
-		console.log(carouselData);
+		console.log(carouselData[i]);
 		listItems += Mustache.render(templateItem, carouselData[i]);
-
+    
 	};
 
 //var fullList = Mustache.render(listItems);
@@ -35,27 +35,19 @@ flkty.on( 'scroll', function( progress ) {
 });
 
 /***************** MAPA **********************/
+
 window.initMap = function() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: carouselData[0].coords
+  });
   
- 
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: carouselData[1].coords});
-
- var markerOne = new google.maps.Marker({
-      position: carouselData[1].coords,
-      map: map
-    });
-
-/*for(var i = 0; i < carouselData.length; i++){
-    var markerOne = new google.maps.Marker({
+  for(var i = 0; i < carouselData.length; i++) {
+    var marker = new google.maps.Marker({
       position: carouselData[i].coords,
       map: map
+    });
+  }
 
-
-    //listItems += Mustache.render(templateItem, carouselData[i]);
-    
-  };*/
-
-
-}
+};
 
