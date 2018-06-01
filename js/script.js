@@ -5,7 +5,7 @@ var templateItem = document.getElementById('template-product-item').innerHTML;
 //Mustache.parse(templateItem);
 
 for(var i = 0; i < carouselData.length; i++){
-		console.log(carouselData[i]);
+		//console.log(carouselData[i]);
 		listItems += Mustache.render(templateItem, carouselData[i]);
     
 	};
@@ -26,7 +26,7 @@ var flkty = new Flickity( elem, {
   hash: true
 
 });
-
+/*********** PROGRESS BAR *******************/
 var progressBar = document.querySelector('.progress-bar')
 
 flkty.on( 'scroll', function( progress ) {
@@ -38,14 +38,19 @@ flkty.on( 'scroll', function( progress ) {
 
 window.initMap = function() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
+    zoom: 3,
     center: carouselData[0].coords
   });
   
   for(var i = 0; i < carouselData.length; i++) {
     var marker = new google.maps.Marker({
       position: carouselData[i].coords,
-      map: map
+      map: map     
+    });
+    marker.addListener('click', function(){
+
+     location.href = "#carousel-cell1";
+      
     });
   }
 
