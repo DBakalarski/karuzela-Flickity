@@ -2,6 +2,7 @@
 <html lang="pl-PL">
 <head>
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<link rel="stylesheet" type="text/css"  href="normalize.css">
 	<link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,7 +20,7 @@
 
 
 	<script id="template-product-item" type="x-tmpl-mustache">
-		<div class="carousel-cell" id="{{number}}" style="background-image: url({{ image }}) "><div class="container"><h1>{{ title }}</h1></div>
+		<div class="carousel-cell" id="{{number}}" style="background-image: url({{ image }}) "><div class="container"><h2>{{ title }}</h2></div>
 		</div>
 		
 	</script>
@@ -27,39 +28,39 @@
 	<script>
 		var carouselData = [
 			{
-				image: 'img/delpicolo.jpg', 
-				title: 'Lorem Ipsum 1',
+				image: 'img/brugee.jpg', 
+				title: 'BRUGEE',
 				number: 'carousel-cell1',
 				description: '<p>Lorem ipsum.</p> <img src="img/delpicolo.jpg">',
-				coords: {lat: -25.363, lng: 131.044}
+				coords: {lat: 51.209348, lng: 3.2246995000000425}
 			},
 			{
-				image: 'img/dumlao.jpg', 
-				title: 'Lorem Ipsum 2',
+				image: 'img/cologne.jpg', 
+				title: 'COLOGNE',
 				number: 'carousel-cell2',
 				description: '<p>Lorem ipsum 2.</p> <img src="img/dumlao.jpg">',
-				coords: {lat: -15.363, lng: 120.044}
+				coords: {lat: 50.941357, lng: 6.958307}
 			},
 			{
-				image: 'img/limraco.jpg', 
-				title: 'Lorem Ipsum 3',
+				image: 'img/minato.jpg', 
+				title: 'MINATO',
 				number: 'carousel-cell3',
 				description: '<p>Lorem ipsum.</p> <img src="img/Limraco.jpg">',
-				coords: {lat: 5.363, lng: 23.044}
+				coords: {lat: 35.6580681, lng: 139.7515992}
 			},
 			{
-				image: 'img/munro.jpg', 
-				title: 'Lorem Ipsum 4',
+				image: 'img/nayhavn.jpg', 
+				title: 'NAYHAVN',
 				number: 'carousel-cell4',
 				description: '<p>Lorem ipsum.</p> <img src="img/munro.jpg">',
-				coords: {lat: -35.363, lng: 80.044}
+				coords: {lat: 55.674497302, lng: 12.587664316}
 			},
 			{
-				image: 'img/tree.jpg', 
-				title: 'Lorem Ipsum 5',
+				image: 'img/new-york.jpg', 
+				title: 'NEW YORK',
 				number: 'carousel-cell5',
 				description: '<p>Lorem ipsum.</p> <img src="img/delpicolo.jpg">',
-				coords: {lat: -42.363, lng: 131.044}
+				coords: {lat: 40.706253, lng:  -74.007154}
 			}
 		];
 	</script>
